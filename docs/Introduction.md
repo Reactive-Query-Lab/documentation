@@ -1,5 +1,5 @@
 ---
-id: reactive-query
+id: '0-introduction'
 title: Introduction
 sidebar_label: Introduction
 description: A framework-agnostic MVVM Model layer library for querying, storing, and caching data in frontend applications using reactive programming.

@@ -1,5 +1,5 @@
 ---
-id: command-model
+id: '2-command-model'
 title: Command Model
 sidebar_label: Command Model
 description: A framework-agnostic MVVM Model layer library for querying, storing, and caching data in frontend applications using reactive programming.

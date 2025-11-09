@@ -1,5 +1,5 @@
 ---
-id: query-model
+id: '1-query-model'
 title: Query Model
 sidebar_label: Query Model
 description: A framework-agnostic MVVM Model layer library for querying, storing, and caching data in frontend applications using reactive programming.
@@ -87,11 +87,21 @@ class UserQueryModel extends ReactiveQueryModel<User> {
         key: 'default',
         value: { id: 0, name: 'Loading...' },
         staleTime: 60 * 1000
-      }
+      },
+      cacheInvalidationStrategy: CacheInvalidationStrategy.GRACEFUL
     };
   }
 }
 ```
+
+#### Cache Invalidation Strategy Trade-offs
+- **FORCE Strategy:**
+  - **Pros:** Ensures data is refreshed immediately after cache expiration, giving users access to the latest data quickly.
+  - **Cons:** May lead to frequent data fetching even if the data hasn't changed, potentially increasing network load and affecting performance.
+
+- **GRACEFUL Strategy:**
+  - **Pros:** Efficient in terms of performance, as it retains data in the cache as long as it's being used. This reduces network requests and minimizes the chances of glitches.
+  - **Cons:** Users might experience a delay in data refresh since the cache checks only occur when no active observers are present.
 
 ### Query API Reference
 
@@ -176,3 +186,4 @@ isSameBaseData(prev: QueryResponse<DATA>, curr: QueryResponse<DATA>): boolean;
 | `cachTime` | `number` | `3 * 60 * 1000` | Default cache time in milliseconds |
 | `emptyVaultOnNewValue` | `boolean` | `false` | Clear vault when new data arrives |
 | `initStore` | `object` | `undefined` | Initial store configuration |
+| `cacheInvalidationStrategy` | `CacheInvalidationStrategy` | `CacheInvalidationStrategy.GRACEFUL` | Cache invalidation strategy |
