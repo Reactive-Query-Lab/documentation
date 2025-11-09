@@ -8,8 +8,9 @@ slug: /examples
 
 ## Query Model
 ### Microfrontend usage
-In this example, we will use the [Query Model](documentation/docs/query-model) to fetch data from a microfrontend as a shared model between two microfrontends which one of them is a react and another one is a svelte application.
-In this case two teams in different framework can use same automated data logics without duplicating the code.
+In this example, we will use the [Query Model](./query-model.md) to fetch data in a microfrontend based project as a shared model between two microfrontends which one of them is a react and another one is a svelte application.
+In this case two developer teams in different projects with different frameworks can use same automated data logics without duplicating the code.
+
+For more detailed information, you can check the [Github Repository](https://github.com/Reactive-Query-Lab/microfront-reactive-query-example).
 
 ![Microfrontend Usage](../static/img/project-overview.png)
-[Github Repository](https://github.com/Reactive-Query-Lab/microfront-reactive-query-example)
