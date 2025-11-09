@@ -120,7 +120,7 @@ const config: Config = {
             },
             {
               label: 'Email',
-              href: 'behnamrahimpour74@gmail.com',
+              href: 'mailto:behnamrahimpour74@gmail.com'
             },
           ],
         },
