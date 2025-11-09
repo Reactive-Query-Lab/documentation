@@ -1,0 +1,49 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2196F3; /* Azure Blue */
+  --ifm-color-primary-dark: #1E88E5; /* Slightly deeper */
+  --ifm-color-primary-darker: #1976D2; /* Royal Blue */
+  --ifm-color-primary-darkest: #0D47A1; /* Deep Blue */
+  --ifm-color-primary-light: #42A5F5; /* Light Azure */
+  --ifm-color-primary-lighter: #64B5F6; /* Sky Blue */
+  --ifm-color-primary-lightest: #BBDEFB; /* Very light tone for hover/background */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --logo-filter: invert(0);
+}
+
+/* For readability, use a lighter and more vibrant palette in dark mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #64B5F6; /* Sky Blue */
+  --ifm-color-primary-dark: #42A5F5; /* Light Azure */
+  --ifm-color-primary-darker: #2196F3; /* Azure Blue */
+  --ifm-color-primary-darkest: #1976D2; /* Royal Blue */
+  --ifm-color-primary-light: #90CAF9; /* Brighter for dark background */
+  --ifm-color-primary-lighter: #BBDEFB; /* Very soft blue */
+  --ifm-color-primary-lightest: #E3F2FD; /* Highlight */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+  --logo-filter: invert(1);
+}
+
+
+.hero__logo {
+  width: 8rem;
+  height: 8rem;
+}
+
+@layer docusaurus.infima {
+  .hero__logo path {
+    fill: var(--ifm-hero-text-color);
+}
+
+}
+
+.header__logo {
+  filter: var(--logo-filter);
+}
