@@ -12,4 +12,4 @@ In this example, we will use the Query Model to fetch data from a microfrontend 
 In this case two teams in different framework can use same automated data logics without duplicating the code.
 
 ![Microfrontend Usage](../static/img/project-overview.png)
-[Github Repository](https://github.com/behnamrhp/reactive-query-examples/tree/main/microfrontend)
+[Github Repository](https://github.com/Reactive-Query-Lab/microfront-reactive-query-example)
