@@ -14,7 +14,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Framework Agnostic',
-    image: '/img/framework-agnostic.png',
+    image: 'img/framework-agnostic.png',
     style: {
       height: '16rem',
       width: '16rem',
@@ -28,7 +28,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Automate Caching',
-    image: '/img/automate-cache.png',
+    image: 'img/automate-cache.png',
     description: (
       <>
         Reactive Query lets you automate caching and staling with different strategies and autmoate invalidation.
@@ -37,7 +37,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Microfrontend Friendly',
-    image: '/img/microfrontend-friendly.png',
+    image: 'img/microfrontend-friendly.png',
     description: (
       <>
         Reactive Query can be used in a single-spa, a microfrontend application. Separate your data logics and let your teams, focus on just UI and UI Logics.
